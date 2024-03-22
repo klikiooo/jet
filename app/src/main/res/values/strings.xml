@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MANOAHMy Application</string>
+    <string name="title_activity_layout">LayoutActivity</string>
+    <string name="title_activity_intent">intentActivity</string>
+</resources>
