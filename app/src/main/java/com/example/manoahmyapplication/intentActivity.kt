@@ -6,6 +6,7 @@ import android.provider.MediaStore
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -33,8 +34,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import com.example.manoahmyapplication.ui.theme.MANOAHMyApplicationTheme
 
@@ -97,9 +102,6 @@ fun Myintents() {
                 val simToolKitLaunchIntent =
                     mContext.packageManager.getLaunchIntentForPackage("com.android.stk")
                 simToolKitLaunchIntent?.let { mContext.startActivity(it) }
-
-
-
 
             },
             modifier = Modifier
@@ -218,6 +220,20 @@ fun Myintents() {
 
         }
         Spacer(modifier = Modifier.height(15.dp))
+
+
+
+        Text(text = "Already have an account",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable {  mContext.startActivity(Intent(mContext,formactivity::class.java)) }
+
+        )
+
+
     }
 }
 

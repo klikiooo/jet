@@ -166,7 +166,7 @@ fun Layout(){
                 mContext.startActivity(Intent(mContext,intentActivity::class.java))
             },
             ) {
-                Text(text = "Sign in with our account")
+                Text(text = "NEXT")
             }
         }
 

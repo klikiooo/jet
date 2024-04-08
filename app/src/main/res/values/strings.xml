@@ -2,4 +2,10 @@
     <string name="app_name">MANOAHMy Application</string>
     <string name="title_activity_layout">LayoutActivity</string>
     <string name="title_activity_intent">intentActivity</string>
+    <string name="title_activity_formactivity">formactivity</string>
+    <string name="title_activity_touractivity">touractivity</string>
+    <string name="title_activity_exploreactivity">exploreactivity</string>
+    <string name="title_activity_woof">woofActivity</string>
+    <string name="title_activity_lottiescreenctivity">lottiescreenctivity</string>
+    <string name="title_activity_splashactivity">DELUXE</string>
 </resources>
